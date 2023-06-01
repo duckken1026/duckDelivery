@@ -13,3 +13,9 @@ https://www.canva.com/design/DAFj_70148Q/gbYp0JydkzNyFmzaNhNqqQ/edit?utm_content
 AR Kit  
 Core ML  
 firebase  
+
+### 更新
+
+2023/06/01:
+    調整foodDetail頁面中的不同元素的位置並在商品介紹文字加入scrollView，可以上下捲動。
+    ContentView的選擇商品列可以左右捲動了，未來可新增不同產品類別。
