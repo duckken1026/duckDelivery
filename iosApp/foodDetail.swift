@@ -12,7 +12,7 @@ struct foodDetail: View {
     var name:String
     var detail:String
     var body: some View {
-        VStack{
+        VStack(){
             Text(name)
                 .font(.largeTitle)
             AsyncImage(url: URL(string:
@@ -22,9 +22,13 @@ struct foodDetail: View {
                 ProgressView()
             }
             .frame(width: 300, height: 300)
-            Text(detail)
+            ScrollView{
+                Text(detail)
+            }.frame(height: 150)
+            Text("abc")
         }
-        .padding()
+        .padding(.top,-200)
+        
     }
 }
 

@@ -40,47 +40,55 @@ struct ContentView: View {
                     
                     ZStack{
                         Image("barBackground")
-                        HStack{
-                            Image(icon.noodleIcon)
-                                .padding(.top,-20)
-                                .onTapGesture {
-                                    icon.turnBlackIcon(icon: "noodle")
-                                    print("noodle")
-                                    foodType = "noodles"
-                                }
-                            Image(icon.pizzaIcon)
-                                .padding(.leading,25)
-                                .padding(.top,-15)
-                                .onTapGesture {
-                                    icon.turnBlackIcon(icon: "pizza")
-                                    print("pizza")
-                                    foodType = "pizza"
-                                }
-                            Image(icon.drinkIcon)
-                                .padding(.leading,10)
-                                .padding(.top,-25)
-                                .onTapGesture {
-                                    icon.turnBlackIcon(icon: "drink")
-                                    print("drink")
-                                    foodType = "drinks"
-                                }
-                            Image(icon.friedFoodIcon)
-                                .padding(.leading,10)
-                                .padding(.top,-20)
-                                .onTapGesture {
-                                    icon.turnBlackIcon(icon: "friedFood")
-                                    print("friedFood")
-                                    foodType = "foods"
-                                }
-                            Image(icon.iceCreamIcon)
-                                .padding(.leading,10)
-                                .padding(.top,-20)
-                                .onTapGesture {
-                                    icon.turnBlackIcon(icon: "iceCream")
-                                    print("iceCream")
-                                    foodType = "iceCream"
-                                }
+                        ScrollView(.horizontal){
+                            HStack{
+                                Image(icon.noodleIcon)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "noodle")
+                                        print("noodle")
+                                        foodType = "noodles"
+                                    }
+                                Image(icon.pizzaIcon)
+                                    .padding(.leading,25)
+                                    .padding(.top,5)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "pizza")
+                                        print("pizza")
+                                        foodType = "pizza"
+                                    }
+                                Image(icon.drinkIcon)
+                                    .padding(.leading,10)
+                                    .padding(.top,-5)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "drink")
+                                        print("drink")
+                                        foodType = "drinks"
+                                    }
+                                Image(icon.friedFoodIcon)
+                                    .padding(.leading,10)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "friedFood")
+                                        print("friedFood")
+                                        foodType = "foods"
+                                    }
+                                Image(icon.iceCreamIcon)
+                                    .padding(.leading,15)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "iceCream")
+                                        print("iceCream")
+                                        foodType = "iceCream"
+                                    }
+                                Image(icon.iceCreamIcon)
+                                    .padding(.leading,10)
+                                Image(icon.iceCreamIcon)
+                                Image(icon.iceCreamIcon)
+                                Spacer(minLength: 1000)
+                            }
                         }
+                        .padding(.leading,70)
+                        .padding(.top,-20)
+                        
+    
                     }
                     .padding(.bottom,-30)
                     HStack{
