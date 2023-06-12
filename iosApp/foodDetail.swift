@@ -25,7 +25,12 @@ struct foodDetail: View {
             ScrollView{
                 Text(detail)
             }.frame(height: 150)
-            Text("abc")
+            Image("ARveiw2")
+                .resizable()
+                .frame(width: 70, height: 50)
+                .onTapGesture {
+                    
+                }
         }
         .padding(.top,-200)
         
