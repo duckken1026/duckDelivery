@@ -24,14 +24,12 @@
 		8B1FA9F120F87E67004D9AE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B1FA9F320F87E67004D9AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B1FA9F920F8812D004D9AE4 /* LibraryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewCell.swift; sourceTree = "<group>"; };
-		8B1FA9FD20F88314004D9AE4 /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = wateringcan.usdz; sourceTree = "<group>"; };
-		8B1FA9FE20F88314004D9AE4 /* redchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = redchair.usdz; sourceTree = "<group>"; };
-		8B1FA9FF20F88314004D9AE4 /* wheelbarrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheelbarrow.usdz; sourceTree = "<group>"; };
-		8B381EFD20F8837B002F5063 /* tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = tulip.usdz; sourceTree = "<group>"; };
-		8B381EFE20F8837B002F5063 /* redchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; name = redchair.usdz; path = "../../../../../../Downloads/HelloAR-master/HelloAR/USDZs/redchair.usdz"; sourceTree = "<group>"; };
-		8B381EFF20F8837B002F5063 /* plantpot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = plantpot.usdz; sourceTree = "<group>"; };
-		8B381F0020F8837B002F5063 /* cupandsaucer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = cupandsaucer.usdz; sourceTree = "<group>"; };
-		8B381F0120F8837C002F5063 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; name = teapot.usdz; path = "../../../../../../Downloads/HelloAR-master/HelloAR/USDZs/teapot.usdz"; sourceTree = "<group>"; };
+		8B1FA9FD20F88314004D9AE4 /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wateringcan.usdz; sourceTree = "<group>"; };
+		8B1FA9FE20F88314004D9AE4 /* redchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = redchair.usdz; sourceTree = "<group>"; };
+		8B1FA9FF20F88314004D9AE4 /* wheelbarrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wheelbarrow.usdz; sourceTree = "<group>"; };
+		8B381EFD20F8837B002F5063 /* tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tulip.usdz; sourceTree = "<group>"; };
+		8B381EFF20F8837B002F5063 /* plantpot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = plantpot.usdz; sourceTree = "<group>"; };
+		8B381F0020F8837B002F5063 /* cupandsaucer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cupandsaucer.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +77,10 @@
 		8B1FA9FB20F88304004D9AE4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8B381F0120F8837C002F5063 /* teapot.usdz */,
 				8B381F0020F8837B002F5063 /* cupandsaucer.usdz */,
 				8B1FA9FE20F88314004D9AE4 /* redchair.usdz */,
 				8B1FA9FD20F88314004D9AE4 /* wateringcan.usdz */,
 				8B1FA9FF20F88314004D9AE4 /* wheelbarrow.usdz */,
-				8B381EFE20F8837B002F5063 /* redchair.usdz */,
 				8B381EFD20F8837B002F5063 /* tulip.usdz */,
 				8B381EFF20F8837B002F5063 /* plantpot.usdz */,
 			);
@@ -311,13 +307,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XJYMG76226;
+				DEVELOPMENT_TEAM = P2AV22CT53;
 				INFOPLIST_FILE = "AR Quick Look Starter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AppCoda.AR-Quick-Look-Starter";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1ken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,13 +325,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XJYMG76226;
+				DEVELOPMENT_TEAM = P2AV22CT53;
 				INFOPLIST_FILE = "AR Quick Look Starter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.AppCoda.AR-Quick-Look-Starter";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1ken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
