@@ -20,7 +20,7 @@ struct Homepage: View {
                 .tabItem{
                     Label("心情推薦",systemImage: "heart")
                 }
-            foodDetail(image: "", name: "abc", detail: "")
+            imageRecommendation()
                 .tabItem{
                     Label("圖片偵測推薦",systemImage: "photo.artframe")
                 }

@@ -11,6 +11,7 @@
 		D214302C2A09ECAB00C14ADF /* welcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214302B2A09ECAB00C14ADF /* welcomePage.swift */; };
 		D216BF3D2A069F1500F44C5D /* iconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216BF3C2A069F1500F44C5D /* iconManager.swift */; };
 		D225491D2A3837730055C1A9 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225491C2A3837730055C1A9 /* Homepage.swift */; };
+		D225491F2A3848F60055C1A9 /* imageRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225491E2A3848F60055C1A9 /* imageRecommendation.swift */; };
 		D27ED08429FFB15F00573647 /* iosAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27ED08329FFB15F00573647 /* iosAppApp.swift */; };
 		D27ED08629FFB15F00573647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27ED08529FFB15F00573647 /* ContentView.swift */; };
 		D27ED08829FFB16000573647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27ED08729FFB16000573647 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		D214302B2A09ECAB00C14ADF /* welcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomePage.swift; sourceTree = "<group>"; };
 		D216BF3C2A069F1500F44C5D /* iconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconManager.swift; sourceTree = "<group>"; };
 		D225491C2A3837730055C1A9 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		D225491E2A3848F60055C1A9 /* imageRecommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageRecommendation.swift; sourceTree = "<group>"; };
 		D27ED08029FFB15F00573647 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27ED08329FFB15F00573647 /* iosAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppApp.swift; sourceTree = "<group>"; };
 		D27ED08529FFB15F00573647 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				D2D51DE12A03556500E83816 /* Register.swift */,
 				D2D986AA2A093368004D071E /* errorPage.swift */,
 				D2D51DE32A03605300E83816 /* pageManager.swift */,
+				D225491E2A3848F60055C1A9 /* imageRecommendation.swift */,
 				D2D51DE92A03A4AC00E83816 /* loginAndRegister.swift */,
 				D2D51DE52A0360E000E83816 /* Login.swift */,
 				D27ED0B829FFBA8C00573647 /* foods.swift */,
@@ -326,6 +329,7 @@
 				D2C860EA2A07FA84005024BD /* foodScrollView.swift in Sources */,
 				D2D51DE62A0360E000E83816 /* Login.swift in Sources */,
 				D2D51DE22A03556500E83816 /* Register.swift in Sources */,
+				D225491F2A3848F60055C1A9 /* imageRecommendation.swift in Sources */,
 				D2D986A92A08C447004D071E /* shopingCart.swift in Sources */,
 				D27ED08429FFB15F00573647 /* iosAppApp.swift in Sources */,
 				D214302C2A09ECAB00C14ADF /* welcomePage.swift in Sources */,
