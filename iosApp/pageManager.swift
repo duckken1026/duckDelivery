@@ -19,7 +19,7 @@ struct pageManager: View {
                 Register(currentScreen: self.$currentScreen)
             }
             else if currentScreen == "contentView"{
-                ContentView(currentScreen: self.$currentScreen)
+                Homepage(currentScreen: self.$currentScreen)
             }
             else if currentScreen == "welcomePage"{
                 welcomePage(text: "歡迎使用鴨鴨訂餐！", image: "welcome_balloon")
