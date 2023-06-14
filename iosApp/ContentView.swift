@@ -78,8 +78,15 @@ struct ContentView: View {
                                         print("iceCream")
                                         foodType = "iceCream"
                                     }
-                                Image(icon.iceCreamIcon)
+                                Image(icon.toolIcon)
+                                    .resizable()
+                                    .frame(width: 70, height: 50)
                                     .padding(.leading,10)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "tool")
+                                        print("tool")
+                                        foodType = "tool"
+                                    }
                                 Image(icon.iceCreamIcon)
                                 Image(icon.iceCreamIcon)
                                 Spacer(minLength: 1000)
