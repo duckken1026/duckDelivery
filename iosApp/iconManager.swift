@@ -18,7 +18,7 @@ class iconManager : ObservableObject{
     @Published var iceCreamIcon = "iceCreamWhite"//冰淇淋的圖標
     @Published var toolIcon = "ARview"//工具的圖標
     @Published var shoesIcon = "shoes1"//鞋子1
-    @Published var furnitureIcon = "furnitureIcon"//鞋子1
+    @Published var furnitureIcon = "furniture"//鞋子1
     
     func turnBlackIcon(icon: String){//轉為黑色圖標
         resetIcon()
@@ -44,7 +44,7 @@ class iconManager : ObservableObject{
             shoesIcon = "shoes1"
         }
         else if(icon == "furnitureIcon"){
-            furnitureIcon = "furnitureIcon"
+            furnitureIcon = "furniture"
         }
     }
     
@@ -56,7 +56,7 @@ class iconManager : ObservableObject{
         iceCreamIcon = "iceCreamWhite"
         toolIcon = "ARview"
         shoesIcon = "shoes1"
-        furnitureIcon = "furnitureIcon"
+        furnitureIcon = "furniture"
     }
     
     func getFoodTypeName(icon: String) -> String{//取得食物種類名稱
