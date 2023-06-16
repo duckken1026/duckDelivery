@@ -18,6 +18,7 @@ struct foodScrollView: View {
     @FirestoreQuery(collectionPath: "iceCream") var iceCream: [foods]
     @FirestoreQuery(collectionPath: "Tool") var tool: [foods]
     @FirestoreQuery(collectionPath: "Shoes") var shoes: [foods]
+    @FirestoreQuery(collectionPath: "furniture") var furniture: [foods]
     let database = databaseOperator()
     var body: some View {
         if(foodType == "noodles"){
@@ -348,7 +349,54 @@ struct foodScrollView: View {
                     .padding(.bottom,-60)
                 }
             }
-    }
+        }
+        else if(foodType == "furniture"){
+            ScrollView {
+                ForEach(furniture) { food in
+                    ZStack{
+                        NavigationLink{
+                            foodDetail(image:food.image,name:food.name,detail: food.detail)
+                        }label: {
+                            Image("background")
+                                .resizable()
+                        }
+                        HStack {
+                            AsyncImage(url: URL(string:
+                                food.image)) { image in
+                                image.resizable()
+                            } placeholder: {
+                                ProgressView()
+                            }
+                            .frame(width: 100, height: 100)
+                            VStack{
+                                Text(food.name)
+                                Image("addButton")
+                                    .frame(width: 130, height: 50)
+                                    .padding(.bottom,-20)
+                                    .onTapGesture {
+                                        database.addStock(collection: "furniture", document: food.id!)
+                                    }
+                                Image("buyButton")
+                                    .frame(width: 130, height: 50)
+                                    .onTapGesture {
+                                        database.buyFood(collection: "furniture", document: food.id!)
+                                        database.addToTotal(foodName: food.name, foodPrice: food.price, foodStock: food.stock, foodImage: food.image)
+                                    }
+                            }
+                            Spacer()
+                            VStack(alignment: .leading) {
+                                Text("價格:"+String(food.price))
+                                Text("庫存:"+"\(food.stock)")
+                                }
+                        }
+                        .padding(50)
+                    }
+                    .padding(.leading,25)
+                    .padding(.trailing,25)
+                    .padding(.bottom,-60)
+                }
+            }
+        }
     }
 }
 
