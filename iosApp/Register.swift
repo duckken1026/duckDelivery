@@ -53,6 +53,7 @@ struct Register: View {
                     .padding(.leading,200)
             }
             Image("registerButton")
+                .padding(.leading,-10)
                 .padding(.top,30)
                 .onTapGesture {
                     Auth.auth().createUser(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in

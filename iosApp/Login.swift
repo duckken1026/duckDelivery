@@ -20,7 +20,7 @@ struct Login: View {
             Image("Group 3")
                .padding(-40)
             Image("loginTitle")
-                .padding(70)
+                .padding(40)
             Image("E-mail Title")
                 .padding(.leading,-160)
                 .padding(.top,-8)
@@ -34,7 +34,7 @@ struct Login: View {
             }
             Image("PasswordTitle2")
                 .padding(.leading,-160)
-                .padding(.top,30)
+                .padding(.top,10)
             ZStack{
                 Image("password")
                     .padding(.leading,-10)
@@ -43,8 +43,30 @@ struct Login: View {
                     .padding(.leading,100)
                     .keyboardType(.default)
             }
+            HStack {
+                VStack { Divider() }
+                Text("or")
+                VStack { Divider() }
+            }
+            .padding(.top,5)
+            Button(action: {}) {
+                Text("Sign in with Google")
+                    .frame(maxWidth: 290)
+                    .padding(.vertical,8)
+                    //.foregroundColor(ColorScheme == .dark ? .white : .black)
+                    .background(alignment : .leading){
+                        Image("google")
+                            .resizable()
+                            .frame(width: 30,height:30,alignment: .leading)
+                    }
+            }
+            .padding(.top,10)
+            .padding(.leading,-10)
+            .buttonStyle(.bordered)
+
             Image("button")
-                .padding(.top,30)
+                .padding(.top,20)
+                .padding(.leading,-10)
                 .onTapGesture {
                     Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
                             guard error == nil else {
@@ -62,12 +84,13 @@ struct Login: View {
                             }
                     }
                 }
+            
             Image("Don’t have an account")
                 .padding(.top,20)
                 .onTapGesture {
                     currentScreen = "Register"
                 }
-            Spacer()
+           // Spacer()
         }
         .ignoresSafeArea()
     }
