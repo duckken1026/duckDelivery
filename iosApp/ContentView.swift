@@ -96,7 +96,24 @@ struct ContentView: View {
                                         print("shoes")
                                         foodType = "shoes"
                                     }
-                                Image(icon.iceCreamIcon)
+                                Image(icon.furnitureIcon)
+                                    .resizable()
+                                    .frame(width: 70, height: 50)
+                                    .padding(.leading,10)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "furniture")
+                                        print("furniture")
+                                        foodType = "furniture"
+                                    }
+                                Image(icon.flowerIcon)
+                                    .resizable()
+                                    .frame(width: 70, height: 50)
+                                    .padding(.leading,10)
+                                    .onTapGesture {
+                                        icon.turnBlackIcon(icon: "flower")
+                                        print("flower")
+                                        foodType = "flower"
+                                    }
                                 Spacer(minLength: 1000)
                             }
                         }
