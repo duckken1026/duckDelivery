@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 import FirebaseAuth
+import GoogleSignIn
 
 struct ContentView: View {
     @Binding var currentScreen:String

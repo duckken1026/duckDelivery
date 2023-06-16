@@ -18,7 +18,7 @@ struct Login: View {
     var body: some View {
         VStack{
             Image("Group 3")
-               .padding(-40)
+                .padding(-40)
             Image("loginTitle")
                 .padding(40)
             Image("E-mail Title")
@@ -53,22 +53,39 @@ struct Login: View {
                 Text("Sign in with Google")
                     .frame(maxWidth: 290)
                     .padding(.vertical,8)
-                    //.foregroundColor(ColorScheme == .dark ? .white : .black)
+                //.foregroundColor(ColorScheme == .dark ? .white : .black)
                     .background(alignment : .leading){
                         Image("google")
                             .resizable()
                             .frame(width: 30,height:30,alignment: .leading)
+                            .onTapGesture {
+                                Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
+                                    guard error == nil else {
+                                        print("error")//輸入錯誤帳號密碼，登入失敗
+                                        currentScreen = "error"
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                            currentScreen = "Login"
+                                        }
+                                        return
+                                    }
+                                    print("success")//成功登入
+                                    currentScreen = "welcomePage"
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                        currentScreen = "contentView"
+                                    }
+                                }
+                            }
+                        }
                     }
-            }
-            .padding(.top,10)
-            .padding(.leading,-10)
-            .buttonStyle(.bordered)
-
-            Image("button")
-                .padding(.top,20)
-                .padding(.leading,-10)
-                .onTapGesture {
-                    Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
+                    .padding(.top,10)
+                    .padding(.leading,-10)
+                    .buttonStyle(.bordered)
+                
+                Image("button")
+                    .padding(.top,20)
+                    .padding(.leading,-10)
+                    .onTapGesture {
+                        Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
                             guard error == nil else {
                                 print("error")//輸入錯誤帳號密碼，登入失敗
                                 currentScreen = "error"
@@ -82,22 +99,22 @@ struct Login: View {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                                 currentScreen = "contentView"
                             }
+                        }
                     }
-                }
-            
-            Image("Don’t have an account")
-                .padding(.top,20)
-                .onTapGesture {
-                    currentScreen = "Register"
-                }
-           // Spacer()
+                
+                Image("Don’t have an account")
+                    .padding(.top,20)
+                    .onTapGesture {
+                        currentScreen = "Register"
+                    }
+                // Spacer()
+            }
+            .ignoresSafeArea()
         }
-        .ignoresSafeArea()
     }
-}
-
-struct Login_Previews: PreviewProvider {
-    static var previews: some View {
-        Login(currentScreen: .constant("Login"))
+    
+    struct Login_Previews: PreviewProvider {
+        static var previews: some View {
+            Login(currentScreen: .constant("Login"))
+        }
     }
-}

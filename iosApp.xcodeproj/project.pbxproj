@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34F37BEE2A3CCFDA0012A4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F37BED2A3CCFDA0012A4EA /* AppDelegate.swift */; };
 		D214302A2A09E4E200C14ADF /* foodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21430292A09E4E200C14ADF /* foodDetail.swift */; };
 		D214302C2A09ECAB00C14ADF /* welcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214302B2A09ECAB00C14ADF /* welcomePage.swift */; };
 		D216BF3D2A069F1500F44C5D /* iconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216BF3C2A069F1500F44C5D /* iconManager.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34F37BED2A3CCFDA0012A4EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D21430292A09E4E200C14ADF /* foodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDetail.swift; sourceTree = "<group>"; };
 		D214302B2A09ECAB00C14ADF /* welcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomePage.swift; sourceTree = "<group>"; };
 		D216BF3C2A069F1500F44C5D /* iconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconManager.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				D2D51DE92A03A4AC00E83816 /* loginAndRegister.swift */,
 				D2D51DE52A0360E000E83816 /* Login.swift */,
 				D27ED0B829FFBA8C00573647 /* foods.swift */,
+				34F37BED2A3CCFDA0012A4EA /* AppDelegate.swift */,
 				D214302B2A09ECAB00C14ADF /* welcomePage.swift */,
 				D27ED08729FFB16000573647 /* Assets.xcassets */,
 				D27ED08929FFB16000573647 /* Preview Content */,
@@ -341,6 +344,7 @@
 				D225491F2A3848F60055C1A9 /* imageRecommendation.swift in Sources */,
 				D2D986A92A08C447004D071E /* shopingCart.swift in Sources */,
 				D27ED08429FFB15F00573647 /* iosAppApp.swift in Sources */,
+				34F37BEE2A3CCFDA0012A4EA /* AppDelegate.swift in Sources */,
 				D214302C2A09ECAB00C14ADF /* welcomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
