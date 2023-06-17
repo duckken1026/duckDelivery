@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseAuth
+import Combine
 
 struct Login: View {
     @Binding var currentScreen:String
@@ -15,6 +16,17 @@ struct Login: View {
     @State private var showAlert = false
     @State private var alertTitle = ""
     let loginManager = loginAndRegister()
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.dismiss) var dismiss
+    private func signInWithGoogle() {
+        Task {
+          if await viewModel.signInWithGoogle() == true {
+            dismiss()
+          }
+        }
+      }
+    
     var body: some View {
         VStack{
             Image("Group 3")
@@ -49,11 +61,14 @@ struct Login: View {
                 VStack { Divider() }
             }
             .padding(.top,5)
-            Button(action: {}) {
+            Button(action: signInWithGoogle) {
                 Text("Sign in with Google")
                     .frame(maxWidth: 290)
                     .padding(.vertical,8)
+<<<<<<< Updated upstream
                 //.foregroundColor(ColorScheme == .dark ? .white : .black)
+=======
+>>>>>>> Stashed changes
                     .background(alignment : .leading){
                         Image("google")
                             .resizable()
@@ -77,6 +92,7 @@ struct Login: View {
                             }
                         }
                     }
+<<<<<<< Updated upstream
                     .padding(.top,10)
                     .padding(.leading,-10)
                     .buttonStyle(.bordered)
@@ -86,6 +102,19 @@ struct Login: View {
                     .padding(.leading,-10)
                     .onTapGesture {
                         Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
+=======
+            }
+            .foregroundColor(colorScheme == .dark ? .white : .black)
+            .padding(.top,10)
+            .padding(.leading,-10)
+            .buttonStyle(.bordered)
+
+            Image("button")
+                .padding(.top,20)
+                .padding(.leading,-10)
+                .onTapGesture {
+                    Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
+>>>>>>> Stashed changes
                             guard error == nil else {
                                 print("error")//輸入錯誤帳號密碼，登入失敗
                                 currentScreen = "error"
@@ -112,9 +141,22 @@ struct Login: View {
             .ignoresSafeArea()
         }
     }
+<<<<<<< Updated upstream
     
     struct Login_Previews: PreviewProvider {
         static var previews: some View {
             Login(currentScreen: .constant("Login"))
         }
     }
+=======
+}
+
+struct Login_Previews: PreviewProvider {
+    static var previews: some View {
+        Login(currentScreen: .constant("Login"))
+            .environmentObject(AuthenticationViewModel())
+          }
+
+}
+
+>>>>>>> Stashed changes

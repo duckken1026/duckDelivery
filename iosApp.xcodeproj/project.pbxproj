@@ -15,6 +15,7 @@
 		D225491F2A3848F60055C1A9 /* imageRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225491E2A3848F60055C1A9 /* imageRecommendation.swift */; };
 		D22549522A3AF2090055C1A9 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D22549512A3AF2090055C1A9 /* GoogleSignIn */; };
 		D22549542A3AF2090055C1A9 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D22549532A3AF2090055C1A9 /* GoogleSignInSwift */; };
+		D25468AC2A3C106A0043B8BB /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25468AB2A3C106A0043B8BB /* AuthenticationViewModel.swift */; };
 		D27ED08429FFB15F00573647 /* iosAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27ED08329FFB15F00573647 /* iosAppApp.swift */; };
 		D27ED08629FFB15F00573647 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27ED08529FFB15F00573647 /* ContentView.swift */; };
 		D27ED08829FFB16000573647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27ED08729FFB16000573647 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		D225491C2A3837730055C1A9 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		D225491E2A3848F60055C1A9 /* imageRecommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageRecommendation.swift; sourceTree = "<group>"; };
 		D22549552A3B05B40055C1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D25468AB2A3C106A0043B8BB /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		D27ED08029FFB15F00573647 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27ED08329FFB15F00573647 /* iosAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppApp.swift; sourceTree = "<group>"; };
 		D27ED08529FFB15F00573647 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		D27ED08229FFB15F00573647 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				D25468AB2A3C106A0043B8BB /* AuthenticationViewModel.swift */,
 				D22549552A3B05B40055C1A9 /* Info.plist */,
 				D2C860E92A07FA84005024BD /* foodScrollView.swift */,
 				D2D986A62A08A386004D071E /* databaseOperator.swift */,
@@ -331,6 +334,7 @@
 			files = (
 				D27ED08629FFB15F00573647 /* ContentView.swift in Sources */,
 				D216BF3D2A069F1500F44C5D /* iconManager.swift in Sources */,
+				D25468AC2A3C106A0043B8BB /* AuthenticationViewModel.swift in Sources */,
 				D2D986A72A08A386004D071E /* databaseOperator.swift in Sources */,
 				D225491D2A3837730055C1A9 /* Homepage.swift in Sources */,
 				D27ED0B929FFBA8C00573647 /* foods.swift in Sources */,
