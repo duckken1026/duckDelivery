@@ -85,10 +85,10 @@ class iconManager : ObservableObject{
         else if(icon == "shoes"){
             return "鞋子"
         }
-        else if(icon == " furniture"){
+        else if(icon == "furniture"){
             return "家具"
         }
-        else if(icon == " flower"){
+        else if(icon == "flower"){
             return "花"
         }
         return ""

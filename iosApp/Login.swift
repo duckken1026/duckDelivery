@@ -7,7 +7,6 @@
 
 import SwiftUI
 import FirebaseAuth
-import Combine
 
 struct Login: View {
     @Binding var currentScreen:String
@@ -16,21 +15,10 @@ struct Login: View {
     @State private var showAlert = false
     @State private var alertTitle = ""
     let loginManager = loginAndRegister()
-    @EnvironmentObject var viewModel: AuthenticationViewModel
-    @Environment(\.colorScheme) var colorScheme
-    @Environment(\.dismiss) var dismiss
-    private func signInWithGoogle() {
-        Task {
-          if await viewModel.signInWithGoogle() == true {
-            dismiss()
-          }
-        }
-      }
-    
     var body: some View {
         VStack{
             Image("Group 3")
-                .padding(-40)
+               .padding(-40)
             Image("loginTitle")
                 .padding(40)
             Image("E-mail Title")
@@ -61,50 +49,17 @@ struct Login: View {
                 VStack { Divider() }
             }
             .padding(.top,5)
-            Button(action: signInWithGoogle) {
+            Button(action: {}) {
                 Text("Sign in with Google")
                     .frame(maxWidth: 290)
                     .padding(.vertical,8)
-<<<<<<< Updated upstream
-                //.foregroundColor(ColorScheme == .dark ? .white : .black)
-=======
->>>>>>> Stashed changes
+                    //.foregroundColor(ColorScheme == .dark ? .white : .black)
                     .background(alignment : .leading){
                         Image("google")
                             .resizable()
                             .frame(width: 30,height:30,alignment: .leading)
-                            .onTapGesture {
-                                Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
-                                    guard error == nil else {
-                                        print("error")//輸入錯誤帳號密碼，登入失敗
-                                        currentScreen = "error"
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                                            currentScreen = "Login"
-                                        }
-                                        return
-                                    }
-                                    print("success")//成功登入
-                                    currentScreen = "welcomePage"
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                                        currentScreen = "contentView"
-                                    }
-                                }
-                            }
-                        }
                     }
-<<<<<<< Updated upstream
-                    .padding(.top,10)
-                    .padding(.leading,-10)
-                    .buttonStyle(.bordered)
-                
-                Image("button")
-                    .padding(.top,20)
-                    .padding(.leading,-10)
-                    .onTapGesture {
-                        Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
-=======
             }
-            .foregroundColor(colorScheme == .dark ? .white : .black)
             .padding(.top,10)
             .padding(.leading,-10)
             .buttonStyle(.bordered)
@@ -114,7 +69,6 @@ struct Login: View {
                 .padding(.leading,-10)
                 .onTapGesture {
                     Auth.auth().signIn(withEmail: $email.wrappedValue, password: $password.wrappedValue) { result, error in
->>>>>>> Stashed changes
                             guard error == nil else {
                                 print("error")//輸入錯誤帳號密碼，登入失敗
                                 currentScreen = "error"
@@ -128,35 +82,22 @@ struct Login: View {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                                 currentScreen = "contentView"
                             }
-                        }
                     }
-                
-                Image("Don’t have an account")
-                    .padding(.top,20)
-                    .onTapGesture {
-                        currentScreen = "Register"
-                    }
-                // Spacer()
-            }
-            .ignoresSafeArea()
+                }
+            
+            Image("Don’t have an account")
+                .padding(.top,20)
+                .onTapGesture {
+                    currentScreen = "Register"
+                }
+           // Spacer()
         }
+        .ignoresSafeArea()
     }
-<<<<<<< Updated upstream
-    
-    struct Login_Previews: PreviewProvider {
-        static var previews: some View {
-            Login(currentScreen: .constant("Login"))
-        }
-    }
-=======
 }
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Login(currentScreen: .constant("Login"))
-            .environmentObject(AuthenticationViewModel())
-          }
-
+    }
 }
-
->>>>>>> Stashed changes
