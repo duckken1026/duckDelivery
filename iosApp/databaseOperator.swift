@@ -92,4 +92,20 @@ class databaseOperator{
         }
         return result
     }
+    
+    func deleteAll(){//清空購物車
+        
+        let db = Firestore.firestore()
+        db.collection("total").getDocuments { (snapshot, error) in
+                if let error = error {
+                    print("获取集合文档时出错：\(error)")
+                    return
+                }
+
+                // 遍历集合中的每个文档并删除它们
+                for document in snapshot!.documents {
+                    document.reference.delete()
+                }
+            }
+    }
 }
