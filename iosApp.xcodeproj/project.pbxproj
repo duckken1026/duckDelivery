@@ -37,6 +37,7 @@
 		D2D986A92A08C447004D071E /* shopingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D986A82A08C447004D071E /* shopingCart.swift */; };
 		D2D986AB2A093368004D071E /* errorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D986AA2A093368004D071E /* errorPage.swift */; };
 		D2E68DF82A3F56280022026B /* MemberCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68DF72A3F56280022026B /* MemberCenterView.swift */; };
+		D2E68DFA2A3F79DA0022026B /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68DF92A3F79DA0022026B /* camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		D2D986A82A08C447004D071E /* shopingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopingCart.swift; sourceTree = "<group>"; };
 		D2D986AA2A093368004D071E /* errorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errorPage.swift; sourceTree = "<group>"; };
 		D2E68DF72A3F56280022026B /* MemberCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterView.swift; sourceTree = "<group>"; };
+		D2E68DF92A3F79DA0022026B /* camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				D2D986AA2A093368004D071E /* errorPage.swift */,
 				D2D51DE32A03605300E83816 /* pageManager.swift */,
 				D225491E2A3848F60055C1A9 /* imageRecommendation.swift */,
+				D2E68DF92A3F79DA0022026B /* camera.swift */,
 				D2D51DE92A03A4AC00E83816 /* loginAndRegister.swift */,
 				D2D51DE52A0360E000E83816 /* Login.swift */,
 				D27ED0B829FFBA8C00573647 /* foods.swift */,
@@ -347,6 +350,7 @@
 				D214302A2A09E4E200C14ADF /* foodDetail.swift in Sources */,
 				D2C860EA2A07FA84005024BD /* foodScrollView.swift in Sources */,
 				D2D51DE62A0360E000E83816 /* Login.swift in Sources */,
+				D2E68DFA2A3F79DA0022026B /* camera.swift in Sources */,
 				D2D51DE22A03556500E83816 /* Register.swift in Sources */,
 				D225491F2A3848F60055C1A9 /* imageRecommendation.swift in Sources */,
 				D2D986A92A08C447004D071E /* shopingCart.swift in Sources */,

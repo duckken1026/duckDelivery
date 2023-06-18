@@ -1,15 +1,41 @@
 import SwiftUI
+import _PhotosUI_SwiftUI
 
 struct MemberCenterView: View {
+    @State var isShowing = false
+    @State private var selectedItem: PhotosPickerItem?
+    @State private var selectedPhotoData: Data?
     var body: some View {
         NavigationView(){
             VStack {
-                Image("google") // 替換為用戶頭像的圖片名稱
-                    .resizable()
-                    .frame(width: 150, height: 150) // 調整頭像大小
-                    .clipShape(Circle())
-                    .padding(.top, 100) // 調整頭像上方的間距
+                ZStack{
+                    Image("headPhoto") // 替換為用戶頭像的圖片名稱
+                        .resizable()
+                        .frame(width: 350, height: 150) // 調整頭像大小
+                        .clipShape(Circle())
+                        .padding(.top, 100) // 調整頭像上方的間距
+                    if let selectedPhotoData,
+                       let image = UIImage(data: selectedPhotoData) {
+                        
+                        Image(uiImage: image)
+                            .resizable()
+                            .frame(width: 150, height: 150) // 調整頭像大小
+                            .clipShape(Circle())
+                            .padding(.top, 100) // 調整頭像上方的間距
+                        
+                    }
+                }
                 
+                PhotosPicker(selection: $selectedItem, matching: .any(of: [.images, .not(.livePhotos)])) {
+                    Label("更換大頭貼", systemImage: "photo")
+                }
+                .onChange(of: selectedItem) { newItem in
+                    Task {
+                        if let data = try? await newItem?.loadTransferable(type: Data.self) {
+                            selectedPhotoData = data
+                        }
+                    }
+                }
                 Text("Thao Ma") // 替換為用戶姓名
                     .font(.largeTitle)
                     .padding(.top, 30) // 調整姓名上方的間距
@@ -29,7 +55,7 @@ struct MemberCenterView: View {
                     Text("會員等級：1") // 替換為用戶的會員等級
                         .font(.largeTitle)
                     
-                    Text("積分：5") // 替換為用戶的會員積分
+                    Text("積分：10") // 替換為用戶的會員積分
                         .font(.largeTitle)
                         .padding(.bottom, 10) // 調整標題底部的間距
                     // 可以根據需要添加更多會員資訊

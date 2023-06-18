@@ -16,7 +16,7 @@ class iconManager : ObservableObject{
     @Published var drinkIcon = "drinkWhite"//飲料的圖標
     @Published var friedFoodIcon = "friedFoodWhite"//炸物的圖標
     @Published var iceCreamIcon = "iceCreamWhite"//冰淇淋的圖標
-    @Published var toolIcon = "ARview"//工具的圖標
+    @Published var toolIcon = "tool"//工具的圖標
     @Published var shoesIcon = "shoes1"//鞋子1
     @Published var furnitureIcon = "furniture"//家具1
     @Published var flowerIcon = "flower"//花
@@ -39,7 +39,7 @@ class iconManager : ObservableObject{
             iceCreamIcon = "iceCreamBlack"
         }
         else if(icon == "tool"){
-            toolIcon = "ARview"
+            toolIcon = "tool"
         }
         else if(icon == "shoes"){
             shoesIcon = "shoes1"
@@ -58,7 +58,7 @@ class iconManager : ObservableObject{
         drinkIcon = "drinkWhite"
         friedFoodIcon = "friedFoodWhite"
         iceCreamIcon = "iceCreamWhite"
-        toolIcon = "ARview"
+        toolIcon = "tool"
         shoesIcon = "shoes1"
         flowerIcon = "flower"
     }

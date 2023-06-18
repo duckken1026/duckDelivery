@@ -16,7 +16,7 @@ struct Homepage: View {
                     Label("訂餐",systemImage: "fork.knife")
                     
                 }
-            foodDetail(image: "", name: "abc", detail: "")
+            camera()
                 .tabItem{
                     Label("心情推薦",systemImage: "heart")
                 }

@@ -115,7 +115,7 @@ struct ContentView: View {
                                         print("flower")
                                         foodType = "flower"
                                     }
-                                Spacer(minLength: 1000)
+                                Spacer(minLength:100)
                             }
                         }
                         .padding(.leading,70)
