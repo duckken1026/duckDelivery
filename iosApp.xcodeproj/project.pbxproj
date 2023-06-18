@@ -38,6 +38,7 @@
 		D2D986AB2A093368004D071E /* errorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D986AA2A093368004D071E /* errorPage.swift */; };
 		D2E68DF82A3F56280022026B /* MemberCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68DF72A3F56280022026B /* MemberCenterView.swift */; };
 		D2E68DFA2A3F79DA0022026B /* camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68DF92A3F79DA0022026B /* camera.swift */; };
+		D2E68DFE2A3F87FE0022026B /* recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68DFD2A3F87FE0022026B /* recommendation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		D2D986AA2A093368004D071E /* errorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errorPage.swift; sourceTree = "<group>"; };
 		D2E68DF72A3F56280022026B /* MemberCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterView.swift; sourceTree = "<group>"; };
 		D2E68DF92A3F79DA0022026B /* camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = camera.swift; sourceTree = "<group>"; };
+		D2E68DFD2A3F87FE0022026B /* recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recommendation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				D27ED0AF29FFB1E500573647 /* GoogleService-Info.plist */,
 				D27ED08329FFB15F00573647 /* iosAppApp.swift */,
 				D27ED08529FFB15F00573647 /* ContentView.swift */,
+				D2E68DFD2A3F87FE0022026B /* recommendation.swift */,
 				D225491C2A3837730055C1A9 /* Homepage.swift */,
 				D21430292A09E4E200C14ADF /* foodDetail.swift */,
 				D2E68DF72A3F56280022026B /* MemberCenterView.swift */,
@@ -358,6 +361,7 @@
 				D2E68DF82A3F56280022026B /* MemberCenterView.swift in Sources */,
 				34F37BEE2A3CCFDA0012A4EA /* AppDelegate.swift in Sources */,
 				D214302C2A09ECAB00C14ADF /* welcomePage.swift in Sources */,
+				D2E68DFE2A3F87FE0022026B /* recommendation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

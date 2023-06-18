@@ -53,7 +53,7 @@ struct imageRecommendation: View {
                     isLoading = true
                     
                     // 載入時間
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
                     isLoading = false
                     isShowingModal = true
                     }
@@ -102,23 +102,6 @@ struct ModalView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        VStack {
-            Text("這是由下往上彈出的視窗")
-                .font(.headline)
-            
-            // 視窗內容...
-            
-            Button(action: {
-                presentationMode.wrappedValue.dismiss()
-            }) {
-                Text("關閉")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-            }
-        }
-        .padding()
+        recommendation()
     }
 }

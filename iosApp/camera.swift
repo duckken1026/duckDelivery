@@ -3,6 +3,7 @@ import UIKit
 
 struct camera: View {
     @State private var isShowingCamera = true
+    @State var isShowingModal = false
     @State private var image: Image?
     @State private var isLoading = false
     var body: some View {
@@ -25,11 +26,15 @@ struct camera: View {
                     isLoading = true
                     DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
                         isLoading = false
+                        isShowingModal = true
                     }
                 }) {
                     CameraView(image: $image)
                 }
-                
+                .sheet(isPresented: $isShowingModal) {
+                            // 彈出的視窗內容
+                            ModalView()
+                    }
                 // 顯示拍攝的照片
                 image?.resizable().scaledToFit()
             }
