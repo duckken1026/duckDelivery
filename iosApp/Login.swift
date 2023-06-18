@@ -7,6 +7,9 @@
 
 import SwiftUI
 import FirebaseAuth
+import GoogleSignIn
+import GoogleSignInSwift
+import Firebase
 
 struct Login: View {
     @Binding var currentScreen:String
@@ -15,6 +18,16 @@ struct Login: View {
     @State private var showAlert = false
     @State private var alertTitle = ""
     let loginManager = loginAndRegister()
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.dismiss) var dismiss
+    private func signInWithGoogle() {
+        Task {
+          if await viewModel.signInWithGoogle() == true {
+            dismiss()
+          }
+        }
+      }
     var body: some View {
         VStack{
             Image("Group 3")
@@ -49,7 +62,7 @@ struct Login: View {
                 VStack { Divider() }
             }
             .padding(.top,5)
-            Button(action: {}) {
+            Button(action: signInWithGoogle) {
                 Text("Sign in with Google")
                     .frame(maxWidth: 290)
                     .padding(.vertical,8)
@@ -63,6 +76,8 @@ struct Login: View {
             .padding(.top,10)
             .padding(.leading,-10)
             .buttonStyle(.bordered)
+
+            
 
             Image("button")
                 .padding(.top,20)
@@ -101,3 +116,4 @@ struct Login_Previews: PreviewProvider {
         Login(currentScreen: .constant("Login"))
     }
 }
+

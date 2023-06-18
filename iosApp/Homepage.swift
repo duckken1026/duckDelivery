@@ -24,7 +24,7 @@ struct Homepage: View {
                 .tabItem{
                     Label("圖片偵測推薦",systemImage: "photo.artframe")
                 }
-            foodDetail(image: "", name: "abc", detail: "")
+            MemberCenterView()
                 .badge("!")
                 .tabItem{
                     Label("會員中心",systemImage: "person.circle")

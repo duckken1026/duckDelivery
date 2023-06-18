@@ -36,6 +36,7 @@
 		D2D986A72A08A386004D071E /* databaseOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D986A62A08A386004D071E /* databaseOperator.swift */; };
 		D2D986A92A08C447004D071E /* shopingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D986A82A08C447004D071E /* shopingCart.swift */; };
 		D2D986AB2A093368004D071E /* errorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D986AA2A093368004D071E /* errorPage.swift */; };
+		D2E68DF82A3F56280022026B /* MemberCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68DF72A3F56280022026B /* MemberCenterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		D2D986A62A08A386004D071E /* databaseOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databaseOperator.swift; sourceTree = "<group>"; };
 		D2D986A82A08C447004D071E /* shopingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopingCart.swift; sourceTree = "<group>"; };
 		D2D986AA2A093368004D071E /* errorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errorPage.swift; sourceTree = "<group>"; };
+		D2E68DF72A3F56280022026B /* MemberCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				D27ED08529FFB15F00573647 /* ContentView.swift */,
 				D225491C2A3837730055C1A9 /* Homepage.swift */,
 				D21430292A09E4E200C14ADF /* foodDetail.swift */,
+				D2E68DF72A3F56280022026B /* MemberCenterView.swift */,
 				D2D986A82A08C447004D071E /* shopingCart.swift */,
 				D216BF3C2A069F1500F44C5D /* iconManager.swift */,
 				D2D51DE12A03556500E83816 /* Register.swift */,
@@ -348,6 +351,7 @@
 				D225491F2A3848F60055C1A9 /* imageRecommendation.swift in Sources */,
 				D2D986A92A08C447004D071E /* shopingCart.swift in Sources */,
 				D27ED08429FFB15F00573647 /* iosAppApp.swift in Sources */,
+				D2E68DF82A3F56280022026B /* MemberCenterView.swift in Sources */,
 				34F37BEE2A3CCFDA0012A4EA /* AppDelegate.swift in Sources */,
 				D214302C2A09ECAB00C14ADF /* welcomePage.swift in Sources */,
 			);
@@ -508,7 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P2AV22CT53;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
@@ -539,7 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P2AV22CT53;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;

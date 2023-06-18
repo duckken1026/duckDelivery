@@ -32,7 +32,7 @@ struct foodDetail: View {
                     
                 }
         }
-        .padding(.top,-200)
+        .padding(.top,-100)
         
     }
 }
