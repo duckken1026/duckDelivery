@@ -83,7 +83,7 @@ struct MemberCenterView: View {
                                                 .cornerRadius(10)
                                             })
                                     }
-                                    .padding(.bottom, 30)
+                                    .padding(.bottom, 100)
                         Button(action: {
                                         // 處理購物紀錄按鈕被點擊後的動作
                                         // 例如，導航到購物紀錄畫面
@@ -99,13 +99,13 @@ struct MemberCenterView: View {
                                             ))
                                             .cornerRadius(10)
                                     }
-                                    .padding(.bottom, 30)
+                                    .padding(.bottom, 100)
                     }
                     
                     
                 
                 }
-                .padding(.top, 30) // 調整會員資訊區塊上方的間距
+                .padding(.top, 0) // 調整會員資訊區塊上方的間距
                 
                 Spacer()
             }
